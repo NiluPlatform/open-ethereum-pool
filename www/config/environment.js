@@ -18,11 +18,11 @@ module.exports = function(environment) {
       ApiUrl: '//example.net/',
 
       // HTTP mining endpoint
-      HttpHost: 'http://example.net',
-      HttpPort: 8888,
+      HttpHost: 'http://miner.nilu.tech',
+      HttpPort: 80,
 
       // Stratum mining endpoint
-      StratumHost: 'example.net',
+      StratumHost: 'miner.nilu.tech',
       StratumPort: 8008,
 
       // Fee and payout details
