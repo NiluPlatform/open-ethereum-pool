@@ -8,11 +8,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common/math"
+	"github.com/NiluPlatform/go-nilu/common/math"
 
-	"github.com/sammy007/open-ethereum-pool/rpc"
-	"github.com/sammy007/open-ethereum-pool/storage"
-	"github.com/sammy007/open-ethereum-pool/util"
+	"github.com/NiluPlatform/open-ethereum-pool/rpc"
+	"github.com/NiluPlatform/open-ethereum-pool/storage"
+	"github.com/NiluPlatform/open-ethereum-pool/util"
 )
 
 type UnlockerConfig struct {
@@ -29,14 +29,16 @@ type UnlockerConfig struct {
 }
 
 const minDepth = 16
-const byzantiumHardForkHeight = 4370000
+const byzantiumHardForkHeight = 0
+const podHardForkHeight = 950000
 
 var homesteadReward = math.MustParseBig256("5000000000000000000")
-var byzantiumReward = math.MustParseBig256("3000000000000000000")
+var byzantiumReward = math.MustParseBig256("8000000000000000000")
+var podReward = math.MustParseBig256("5000000000000000000")
 
 // Donate 10% from pool fees to developers
 const donationFee = 10.0
-const donationAccount = "0xb85150eb365e7df0941f0cf08235f987ba91506a"
+const donationAccount = "0x9f5cca390496647b0a9a90803da67af7b9c11eee"
 
 type BlockUnlocker struct {
 	config   *UnlockerConfig
@@ -97,7 +99,7 @@ type UnlockResult struct {
  * Having very likely incorrect height in database results in a weird block unlocking scheme,
  * when I have to check what the hell we actually found and traversing all the blocks with height-N and height+N
  * to make sure we will find it. We can't rely on round height here, it's just a reference point.
- * ISSUE: https://github.com/ethereum/go-ethereum/issues/2333
+ * ISSUE: https://github.com/NiluPlatform/go-nilu/issues/2333
  */
 func (u *BlockUnlocker) unlockCandidates(candidates []*storage.BlockData) (*UnlockResult, error) {
 	result := &UnlockResult{}
@@ -503,6 +505,9 @@ func weiToShannonInt64(wei *big.Rat) int64 {
 
 func getConstReward(height int64) *big.Int {
 	if height >= byzantiumHardForkHeight {
+		if height >= podHardForkHeight {
+			return new(big.Int).Set(podReward)
+		}
 		return new(big.Int).Set(byzantiumReward)
 	}
 	return new(big.Int).Set(homesteadReward)

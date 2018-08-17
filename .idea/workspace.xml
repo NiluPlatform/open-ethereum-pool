@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="893d5b9a-d81b-46f0-9f42-34133fc2e96a" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE.md" beforeDir="false" afterPath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/env.sh" beforeDir="false" afterPath="$PROJECT_DIR$/build/env.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.example.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.example.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/PAYOUTS.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/PAYOUTS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/POLICIES.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/POLICIES.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/STRATUM.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/STRATUM.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/nginx-default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/misc/nginx-default.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/upstart.conf" beforeDir="false" afterPath="$PROJECT_DIR$/misc/upstart.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payouts/payer.go" beforeDir="false" afterPath="$PROJECT_DIR$/payouts/payer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payouts/unlocker.go" beforeDir="false" afterPath="$PROJECT_DIR$/payouts/unlocker.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payouts/unlocker_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/payouts/unlocker_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/policy/policy.go" beforeDir="false" afterPath="$PROJECT_DIR$/policy/policy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy/blocks.go" beforeDir="false" afterPath="$PROJECT_DIR$/proxy/blocks.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/proxy/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy/handlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/proxy/handlers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy/miner.go" beforeDir="false" afterPath="$PROJECT_DIR$/proxy/miner.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy/proto.go" beforeDir="false" afterPath="$PROJECT_DIR$/proxy/proto.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy/proxy.go" beforeDir="false" afterPath="$PROJECT_DIR$/proxy/proxy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy/stratum.go" beforeDir="false" afterPath="$PROJECT_DIR$/proxy/stratum.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc/rpc.go" beforeDir="false" afterPath="$PROJECT_DIR$/rpc/rpc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/redis.go" beforeDir="false" afterPath="$PROJECT_DIR$/storage/redis.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/redis_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/storage/redis_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/util.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/.bowerrc" beforeDir="false" afterPath="$PROJECT_DIR$/www/.bowerrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/www/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/.ember-cli" beforeDir="false" afterPath="$PROJECT_DIR$/www/.ember-cli" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/www/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/.jshintrc" beforeDir="false" afterPath="$PROJECT_DIR$/www/.jshintrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/www/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/.watchmanconfig" beforeDir="false" afterPath="$PROJECT_DIR$/www/.watchmanconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/www/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/components/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/components/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/components/active-li.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/components/active-li.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/controllers/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/controllers/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/controllers/account.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/controllers/account.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/controllers/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/controllers/application.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/controllers/help.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/controllers/help.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/controllers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/controllers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/formats.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/formats.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/helpers/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/helpers/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/helpers/format-balance.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/helpers/format-balance.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/helpers/format-date-locale.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/helpers/format-date-locale.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/helpers/format-hashrate.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/helpers/format-hashrate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/helpers/format-tx.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/helpers/format-tx.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/helpers/seconds-to-ms.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/helpers/seconds-to-ms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/helpers/string-to-int.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/helpers/string-to-int.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/helpers/with-metric-prefix.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/helpers/with-metric-prefix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/models/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/models/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/models/block.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/models/block.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/models/payment.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/models/payment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/resolver.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/resolver.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/routes/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/routes/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/routes/account.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/routes/account.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/routes/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/routes/application.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/routes/blocks.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/routes/blocks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/routes/miners.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/routes/miners.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/routes/payments.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/routes/payments.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/styles/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/templates/about.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/templates/about.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/templates/account.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/templates/account.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/templates/account/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/templates/account/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/templates/account/payouts.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/templates/account/payouts.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/templates/application-error.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/templates/application-error.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/templates/application.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/templates/application.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/templates/blocks.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/templates/blocks.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/templates/blocks/block.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/templates/blocks/block.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/templates/blocks/immature.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/templates/blocks/immature.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/templates/blocks/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/templates/blocks/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/templates/blocks/pending.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/templates/blocks/pending.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/templates/components/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/templates/components/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/templates/components/active-li.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/templates/components/active-li.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/templates/help.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/templates/help.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/templates/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/templates/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/templates/luck.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/templates/luck.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/templates/miners.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/templates/miners.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/templates/not-found.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/templates/not-found.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app/templates/payments.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/www/app/templates/payments.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/www/bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/config/ember-intl.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/config/ember-intl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/config/environment.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/config/environment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/ember-cli-build.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/ember-cli-build.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/www/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/public/bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/public/bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/public/crossdomain.xml" beforeDir="false" afterPath="$PROJECT_DIR$/www/public/crossdomain.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/www/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/www/public/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/testem.json" beforeDir="false" afterPath="$PROJECT_DIR$/www/testem.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/tests/.jshintrc" beforeDir="false" afterPath="$PROJECT_DIR$/www/tests/.jshintrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/tests/helpers/destroy-app.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/tests/helpers/destroy-app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/tests/helpers/module-for-acceptance.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/tests/helpers/module-for-acceptance.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/tests/helpers/resolver.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/tests/helpers/resolver.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/tests/helpers/start-app.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/tests/helpers/start-app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/tests/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/tests/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/tests/integration/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/www/tests/integration/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/tests/test-helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/tests/test-helper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/tests/unit/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/www/tests/unit/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/translations/en-us.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/www/translations/en-us.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/vendor/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/www/vendor/.gitkeep" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="miner.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/proxy/miner.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ethash.go" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.go/src/github.com/NiluPlatform/go-nilu/consensus/ethash/ethash.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="980">
+              <caret line="610" selection-start-line="610" selection-end-line="610" />
+              <folding>
+                <element signature="e#881#1212#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="unlocker.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/payouts/unlocker.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+              <folding>
+                <element signature="e#17#275#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Makefile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Makefile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="585">
+              <caret line="39" column="45" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>reward</find>
+      <find>byzantiumHardForkHeight</find>
+      <find>ethereum/go-ethereum</find>
+      <find>sammy</find>
+      <find>github.com/sammy007</find>
+      <find>sammy007</find>
+      <find>github.com/ethereum/go-ethereum</find>
+      <find>github.com/ethereum/ethash</find>
+      <find>Sha3Hash</find>
+      <find>generate(</find>
+      <find>Verify</find>
+      <find>ethash_callback_t</find>
+      <find>go-ethereum</find>
+      <find>sha3</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>NiluPlatform/go-nilu</replace>
+      <replace>github.com/NiluPlatform</replace>
+      <replace>github.com/NiluPlatform/go-nilu</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/build/_workspace/src/github.com</dir>
+      <dir>$PROJECT_DIR$/build</dir>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/build/_workspace/src/github.com/ethereum</dir>
+      <dir>$PROJECT_DIR$/src</dir>
+      <dir>$PROJECT_DIR$/build/_workspace/src/github.com/ethereum/ethash</dir>
+    </dirStrings>
+  </component>
+  <component name="GOROOT" path="/usr/local/Cellar/go/1.9.2/libexec" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/build/_workspace/src/github.com/ethereum/go-ethereum/build/ci.go" />
+        <option value="$PROJECT_DIR$/util/util.go" />
+        <option value="$PROJECT_DIR$/proxy/blocks.go" />
+        <option value="$PROJECT_DIR$/payouts/payer.go" />
+        <option value="$PROJECT_DIR$/rpc/rpc.go" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/payouts/unlocker.go" />
+        <option value="$PROJECT_DIR$/build/_workspace/src/github.com/NiluPlatform/open-ethereum-pool/rpc/rpc.go" />
+        <option value="$PROJECT_DIR$/build/_workspace/src/github.com/NiluPlatform/open-ethereum-pool/util/util.go" />
+        <option value="$PROJECT_DIR$/build/_workspace/src/github.com/NiluPlatform/open-ethereum-pool/api/server.go" />
+        <option value="$PROJECT_DIR$/proxy/ethash.go" />
+        <option value="$PROJECT_DIR$/build/_workspace/src/github.com/ethereum/ethash/ethash.go" />
+        <option value="$PROJECT_DIR$/proxy/miner.go" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/build/_workspace/src/github.com/NiluPlatform/go-nilu/dashboard/assets/package.json" />
+      <path value="$PROJECT_DIR$/build/_workspace/src/github.com/NiluPlatform/go-nilu/tests/testdata/RPCTests/package.json" />
+      <path value="$PROJECT_DIR$/www/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="773" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="nilu-pool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nilu-pool" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nilu-pool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nilu-pool" type="462c0819:PsiDirectoryNode" />
+              <item name=".github" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nilu-pool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nilu-pool" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nilu-pool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nilu-pool" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="_workspace" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nilu-pool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nilu-pool" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="_workspace" type="462c0819:PsiDirectoryNode" />
+              <item name="pkg" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nilu-pool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nilu-pool" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="_workspace" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nilu-pool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nilu-pool" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="_workspace" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="github.com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nilu-pool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nilu-pool" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nilu-pool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nilu-pool" type="462c0819:PsiDirectoryNode" />
+              <item name="proxy" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/proxy" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1280" height="773" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24959612" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.424196" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/www/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/testem.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/_workspace/src/github.com/ethereum/go-ethereum/consensus/ethash/consensus.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="26" column="36" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/_workspace/src/github.com/ethereum/go-ethereum/build/ci.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="49" column="14" lean-forward="true" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-597">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.example.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/util.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-567">
+          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proxy/blocks.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/payouts/payer.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3882">
+          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc/rpc.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2497">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#13#228#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="45" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/payouts/unlocker.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+          <folding>
+            <element signature="e#17#275#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/_workspace/src/github.com/NiluPlatform/open-ethereum-pool/rpc/rpc.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/_workspace/src/github.com/NiluPlatform/open-ethereum-pool/util/util.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/_workspace/src/github.com/NiluPlatform/open-ethereum-pool/api/server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.go/src/github.com/NiluPlatform/go-nilu/consensus/ethash/ethash.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="980">
+          <caret line="610" selection-start-line="610" selection-end-line="610" />
+          <folding>
+            <element signature="e#881#1212#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/python/core.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/libethash/sha3_cryptopp.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-297" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proxy/ethash.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2251">
+          <caret line="161" selection-start-line="161" selection-end-line="161" />
+          <folding>
+            <element signature="e#1032#1305#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/_workspace/src/github.com/ethereum/ethash/vendor/github.com/ethereum/go-ethereum/crypto/crypto.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="69" column="64" selection-start-line="69" selection-start-column="51" selection-end-line="69" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/_workspace/src/github.com/ethereum/go-ethereum/crypto/sha3/sha3.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2107" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/_workspace/src/github.com/ethereum/go-ethereum/crypto/crypto.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-212">
+          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/_workspace/src/github.com/ethereum/ethash/ethash.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="433" column="30" selection-start-line="433" selection-start-column="30" selection-end-line="433" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proxy/miner.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -15,19 +15,19 @@ module.exports = function(environment) {
 
     APP: {
       // API host and port
-      ApiUrl: '//example.net/',
+      ApiUrl: '',
 
       // HTTP mining endpoint
-      HttpHost: 'http://example.net',
-      HttpPort: 8888,
+      HttpHost: 'http://devminer.nilu.tech',
+      HttpPort: 80,
 
       // Stratum mining endpoint
-      StratumHost: 'example.net',
+      StratumHost: 'devminer.nilu.tech',
       StratumPort: 8008,
 
       // Fee and payout details
       PoolFee: '1%',
-      PayoutThreshold: '0.5 Ether',
+      PayoutThreshold: '3 NILU',
 
       // For network hashrate (change for your favourite fork)
       BlockTime: 14.4

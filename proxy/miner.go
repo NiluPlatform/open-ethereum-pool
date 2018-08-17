@@ -6,8 +6,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ethereum/ethash"
-	"github.com/ethereum/go-ethereum/common"
+
+	"github.com/NiluPlatform/go-nilu/common"
+
+	"github.com/NiluPlatform/ethash"
 )
 
 var hasher = ethash.New()

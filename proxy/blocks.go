@@ -7,10 +7,10 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/NiluPlatform/go-nilu/common"
 
-	"github.com/sammy007/open-ethereum-pool/rpc"
-	"github.com/sammy007/open-ethereum-pool/util"
+	"github.com/NiluPlatform/open-ethereum-pool/rpc"
+	"github.com/NiluPlatform/open-ethereum-pool/util"
 )
 
 const maxBacklog = 3
