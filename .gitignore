@@ -4,3 +4,7 @@ testnet.json
 
 /build/_workspace/
 /build/bin/
+*.iml
+*.ipr
+*.iws
+
