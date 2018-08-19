@@ -40,7 +40,7 @@ If your payout is not logged and not confirmed by Ethereum network you can resol
 
 `RESOLVE_PAYOUT=1 ./build/bin/open-ethereum-pool payouts.json`.
 
-Payout module will fetch all rows from Redis with key `eth:payments:pending` and credit balance back to miners. Usually you will have only single entry there.
+Payout module will fetch all rows from Redis with key `nilu:payments:pending` and credit balance back to miners. Usually you will have only single entry there.
 
 If you see `No pending payments to resolve` we have no data about failed debits.
 
@@ -68,14 +68,14 @@ Unset `RESOLVE_PAYOUT=1` or run payouts with `RESOLVE_PAYOUT=0`.
 
 ## Resolving Failed Payment (manual)
 
-You can perform manual maintenance using `geth` and `redis-cli` utilities.
+You can perform manual maintenance using `gilu` and `redis-cli` utilities.
 
 ### Check For Failed Transactions:
 
 Perform the following command in a `redis-cli`:
 
 ```
-ZREVRANGE "eth:payments:pending" 0 -1 WITHSCORES
+ZREVRANGE "nilu:payments:pending" 0 -1 WITHSCORES
 ```
 
 Result will be like this:
@@ -109,30 +109,30 @@ eth.sendTransaction({
 Also usable for fixing missing payment entries.
 
 ```
-ZADD "eth:payments:all" 1462920526 0xe670ec64341771606e55d6b4ca35a1a6b75ee3d5145a99d05921026d1527331:0x9f5cca390496647b0a9a90803da67af7b9c11eee:25000000
+ZADD "nilu:payments:all" 1462920526 0xe670ec64341771606e55d6b4ca35a1a6b75ee3d5145a99d05921026d1527331:0x9f5cca390496647b0a9a90803da67af7b9c11eee:25000000
 ```
 
 ```
-ZADD "eth:payments:0x9f5cca390496647b0a9a90803da67af7b9c11eee" 1462920526 0xe670ec64341771606e55d6b4ca35a1a6b75ee3d5145a99d05921026d1527331:25000000
+ZADD "nilu:payments:0x9f5cca390496647b0a9a90803da67af7b9c11eee" 1462920526 0xe670ec64341771606e55d6b4ca35a1a6b75ee3d5145a99d05921026d1527331:25000000
 ```
 
 ### Delete Erroneous Payment Entry
 
 ```
-ZREM "eth:payments:pending" "0x9f5cca390496647b0a9a90803da67af7b9c11eee:25000000"
+ZREM "nilu:payments:pending" "0x9f5cca390496647b0a9a90803da67af7b9c11eee:25000000"
 ```
 
 ### Update Internal Stats
 
 ```
-HINCRBY "eth:finances" pending -25000000
-HINCRBY "eth:finances" paid 25000000
+HINCRBY "nilu:finances" pending -25000000
+HINCRBY "nilu:finances" paid 25000000
 ```
 
 ### Unlock Payouts
 
 ```
-DEL "eth:payments:lock"
+DEL "nilu:payments:lock"
 ```
 
 ## Resolving Missing Payment Entries
