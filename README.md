@@ -2,22 +2,20 @@
 
 ![Miner's stats page](https://user-images.githubusercontent.com/7374093/31591180-43c72364-b236-11e7-8d47-726cd66b876a.png)
 
-[![Join the chat at https://gitter.im/sammy007/open-ethereum-pool](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sammy007/open-ethereum-pool?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Build Status](https://travis-ci.org/sammy007/open-ethereum-pool.svg?branch=develop)](https://travis-ci.org/sammy007/open-ethereum-pool) [![Go Report Card](https://goreportcard.com/badge/github.com/NiluPlatform/open-ethereum-pool)](https://goreportcard.com/report/github.com/NiluPlatform/open-ethereum-pool)
-
 ### Features
 
-**This pool is being further developed to provide an easy to use pool for Ethereum miners. This software is functional however an optimised release of the pool is expected soon. Testing and bug submissions are welcome!**
+**This pool is being further developed to provide an easy to use pool for Nilu miners. This software is functional however an optimised release of the pool is expected soon. Testing and bug submissions are welcome!**
 
 * Support for HTTP and Stratum mining
 * Detailed block stats with luck percentage and full reward
-* Failover geth instances: geth high availability built in
+* Failover gilu instances: gilu high availability built in
 * Modern beautiful Ember.js frontend
 * Separate stats for workers: can highlight timed-out workers so miners can perform maintenance of rigs
 * JSON-API for stats
 
 #### Proxies
 
-* [Ether-Proxy](https://github.com/NiluPlatform/ether-proxy) HTTP proxy with web interface
+* [Ether-Proxy](https://github.com/ethereum/ether-proxy) HTTP proxy with web interface
 * [Stratum Proxy](https://github.com/Atrides/eth-proxy) for Ethereum
 
 ### Building on Linux
@@ -25,14 +23,14 @@
 Dependencies:
 
   * go >= 1.9
-  * geth or parity
+  * gilu
   * redis-server >= 2.8.0
   * nodejs >= 4 LTS
   * nginx
 
 **I highly recommend to use Ubuntu 16.04 LTS.**
 
-First install  [gilu](https://github.com/NiluPlatform/go-nilu/wiki/Installation-Instructions-for-Ubuntu).
+First install  [gilu](https://github.com/NiluPlatform/go-nilu).
 
 Clone & compile:
 
@@ -105,7 +103,7 @@ otherwise you will get errors on start because of JSON comments.**
   // Set to the number of CPU cores of your server
   "threads": 2,
   // Prefix for keys in redis store
-  "coin": "eth",
+  "coin": "nilu",
   // Give unique name to each instance
   "name": "main",
 
@@ -303,21 +301,13 @@ I recommend this deployment strategy:
 * Don't run payouts and unlocker modules as part of mining node. Create separate configs for both, launch independently and make sure you have a single instance of each module running.
 * If `poolFeeAddress` is not specified all pool profit will remain on coinbase address. If it specified, make sure to periodically send some dust back required for payments.
 
-### Alternative Ethereum Implementations
-
-This pool is tested to work with [Ethcore's Parity](https://github.com/ethcore/parity). Mining and block unlocking works, but I am not sure about payouts and suggest to run *official* geth node for payments.
-
 ### Credits
 
-Made by sammy007. Licensed under GPLv3.
-
-#### Contributors
-
-[Alex Leverington](https://github.com/subtly)
+Forked from by sammy007/open-ethereum-pool. Licensed under GPLv3.
 
 ### Donations
 
-ETH/ETC: 0x9f5cca390496647b0a9a90803da67af7b9c11eee
+NILU/ETH/ETC: 0x9f5cca390496647b0a9a90803da67af7b9c11eee
 
 ![](https://cdn.pbrd.co/images/GP5tI1D.png)
 
