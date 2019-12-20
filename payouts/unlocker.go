@@ -31,10 +31,19 @@ type UnlockerConfig struct {
 const minDepth = 16
 const byzantiumHardForkHeight = 0
 const podHardForkHeight = 1000000
+const podForkHalving1Height = 4150000
+const podForkHalving2Height = 12000000
+const podForkHalving3Height = 28000000
+const podForkNoRewardHeight = 60000000
 
 var homesteadReward = math.MustParseBig256("5000000000000000000")
 var byzantiumReward = math.MustParseBig256("8000000000000000000")
 var podReward = math.MustParseBig256("4000000000000000000")
+var podHalving1Reward = math.MustParseBig256("2000000000000000000")
+var podHalving2Reward = math.MustParseBig256("1000000000000000000")
+var podHalving3Reward = math.MustParseBig256("500000000000000000")
+var podNoReward = math.MustParseBig256("0")
+
 
 // Donate 10% from pool fees to developers
 const donationFee = 10.0
@@ -505,6 +514,18 @@ func weiToShannonInt64(wei *big.Rat) int64 {
 
 func getConstReward(height int64) *big.Int {
 	if height >= byzantiumHardForkHeight {
+		if height > podForkNoRewardHeight {
+			return new(big.Int).Set(podNoReward);
+		}
+		if height > podForkHalving3Height {
+			return new(big.Int).Set(podHalving3Reward);
+		}
+		if height > podForkHalving2Height {
+			return new(big.Int).Set(podHalving2Reward);
+		}
+		if height > podForkHalving1Height {
+			return new(big.Int).Set(podHalving1Reward);
+		}
 		if height >= podHardForkHeight {
 			return new(big.Int).Set(podReward)
 		}
